@@ -1,0 +1,70 @@
+@media (max-width: 960px) {
+    .feature-title {
+        font-size: var(--responsive-title-size);
+        margin: 30px 0 0 0;
+    }
+    .slogan-title {
+        font-size: var(--responsive-title-size);
+    }
+
+    .current-location-title{
+        font-size: 11px;
+    }
+
+    .studio-menu {
+        margin-right: 30px;
+    }
+
+    .studio-logo > a > img {
+        width: 100px;
+    }
+
+    .studio-logo {
+        margin-left: 15px;
+    }
+    .uk-position-bottom {
+        left: 30px;
+        bottom: 30px;
+    }
+
+    .social-icons > a {
+        padding-right: 5px;
+    }
+    .social-icons > a > svg {
+        width: 15px;
+        height: 15px;
+    }
+
+    .feature {
+        margin: 50px;
+    }
+    .feature > div > div > img {
+        margin-top: 50px;
+        width: 40px;
+    }
+    .clients {
+        margin: 0;
+    }
+
+    .feature-desc {
+        margin: 10px 0 0 0;
+        font-size: var(--responsive-desc-size);
+        line-height: var(--responsive-desc-line-height);
+    }
+    .slogan-desc {
+        font-size: var(--responsive-desc-size);
+        line-height: var(--responsive-desc-line-height);
+    }
+
+    .uk-logo {
+        width: 100px;
+    }
+
+    .slogan {
+        padding: 45px !important;
+    }
+
+    .footer-text {
+        font-size: 11px;
+    }
+}

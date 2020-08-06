@@ -1,0 +1,17 @@
+:root{
+    --menu-font-size:24px;
+    --main-panel-background:#FDFDFD;
+    --main-panel-margin:45px;
+    --work-margin:48px;
+    --work-padding:5px;
+    --slogan-margin:150px;
+    --about-top-margin:150px;
+    --about-side-margin:48px;
+    --about-team-side-margin:102px;
+    --about-team-members-name:18px;
+    --about-team-members-role:5px;
+    --feature-margin:100px;
+    --responsive-title-size:15px;
+    --responsive-desc-size:11px;
+    --responsive-desc-line-height:calc(11px*1.8);
+}
