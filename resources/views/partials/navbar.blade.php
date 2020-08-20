@@ -1,8 +1,8 @@
-<div id="navbar"  uk-sticky="show-on-up: true" class="uk-padding-remove navbar uk-height-small">
+<div id="navbar"  uk-sticky="show-on-up: true;animation: uk-animation-slide-top;" class="uk-padding-remove navbar uk-height-small">
     <nav class="uk-navbar-container uk-navbar-transparent" uk-navbar>
         <div class="uk-navbar-left studio-logo">
             <a href="{{ url('/') }}" class="uk-paddig-remove uk-logo">
-                <img width="180px" src="{{ asset('images/logo.png') }}" alt="">
+                <img  src="{{ url('img/'.$logo->value) }}" alt="">
             </a>
         </div>
         <div class="uk-navbar-right studio-menu">

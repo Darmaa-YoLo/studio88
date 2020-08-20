@@ -15,6 +15,9 @@
 </head>
 
 <body>
+    <div class="loader">
+        <img class="uk-position-center" src="{{asset('images/copper-loader.gif')}}" alt="">
+    </div>
     <div class="main-container">
         @include('components.menu')
 
@@ -26,6 +29,14 @@
     <script src="{{ asset('js/uikit.min.js') }}"></script>
     <script src="{{ asset('js/uikit-icons.min.js') }}"></script>
     <script src="{{ asset('js/global.js') }}"></script>
+    <script src="{{ asset('js/jquery.js') }}"></script>
+
+    <script>
+        $(window).on("load", function() {
+            $("div.loader").slideUp();
+        });
+    </script>
+    @stack('scripts')
 </body>
 
 </html>

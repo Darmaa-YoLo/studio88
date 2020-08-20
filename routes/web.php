@@ -13,12 +13,14 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('pages.index');
-});
-Route::get('/about', function () {
-    return view('pages.about');
-});
-Route::get('/contact', function () {
-    return view('pages.contact');
-});
+
+Auth::routes();
+Route::get('/', 'AppController@home');
+Route::get('/index','AppController@index');
+Route::get('/contact', 'AppController@contact');
+Route::get('/about', 'AppController@about');
+Route::get('/portfolio', 'AppController@portfolio');
+Route::get('img/{path}', 'ImageController@render')->where('path', '.*');
+Route::get('video/{path}', 'VideoController@render')->where('path', '.*');
+
+

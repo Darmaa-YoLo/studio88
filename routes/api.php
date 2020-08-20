@@ -14,6 +14,28 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::middleware('auth:api')->get('/user', function (Request $request) {
-    return $request->user();
+Route::namespace('Auth')->group(function () {
+    Route::post('login', 'LoginController@login');
 });
+
+$modules = [
+    'users' => 'UserController',
+    'works' => 'WorkController',
+    'clients' => 'ClientController',
+    'team' => 'TeamController',
+    'trackers' => 'TrackerController',
+    'filter' => 'FilterController',
+    'about'=>'AboutController'
+];
+
+Route::middleware('auth:sanctum')->group(function () use ($modules) {
+    Route::apiResources($modules);
+    Route::post('upload/image', 'ImageController@uploadImage');
+    Route::post('upload/video', 'VideoController@uploadVideo');
+    Route::get('option', 'OptionController@show');
+    Route::put('option', 'OptionController@update');
+});
+
+foreach ($modules as $route => $controller) {
+    Route::post($route . '/mass/destroy', $controller . '@massDestroy');
+}

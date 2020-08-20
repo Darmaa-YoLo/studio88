@@ -1,4 +1,12 @@
 @media (max-width: 960px) {
+
+    .sets{
+        height: 250px;
+    }
+    
+    .main-container {
+        margin: 0;
+    }
     .feature-title {
         font-size: var(--responsive-title-size);
         margin: 30px 0 0 0;
@@ -7,8 +15,8 @@
         font-size: var(--responsive-title-size);
     }
 
-    .current-location-title{
-        font-size: 11px;
+    .current-location-title {
+        font-size: 16px;
     }
 
     .studio-menu {
@@ -19,6 +27,11 @@
         width: 100px;
     }
 
+    .portfolio{
+        padding-left:20px ;
+        padding-top: 50px;
+    }
+
     .studio-logo {
         margin-left: 15px;
     }
@@ -27,25 +40,39 @@
         bottom: 30px;
     }
 
+
     .social-icons > a {
-        padding-right: 5px;
+        padding-right: 10px;
     }
     .social-icons > a > svg {
-        width: 15px;
-        height: 15px;
+        width: 48px;
+        height: 48px;
+    }
+
+    .works{
+        margin: 0 20px;
+    }
+
+    .sht > video,
+    .sht {
+        height: 250px !important;
     }
 
     .feature {
-        margin: 50px;
+        margin: 0 30px;
     }
     .feature > div > div > img {
         margin-top: 50px;
         width: 40px;
     }
+
     .clients {
         margin: 0;
+        padding:20px !important;
     }
-
+    .client-logo{
+        height: 100px !important;
+    }
     .feature-desc {
         margin: 10px 0 0 0;
         font-size: var(--responsive-desc-size);
@@ -56,15 +83,66 @@
         line-height: var(--responsive-desc-line-height);
     }
 
-    .uk-logo {
-        width: 100px;
+    #menu {
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+    }
+
+    .uk-logo > img {
+        height: 70px;
+        width: auto;
     }
 
     .slogan {
         padding: 45px !important;
     }
 
+    .footer{
+        margin-top:0 ;
+    }
+
     .footer-text {
         font-size: 11px;
+    }
+
+    #map {
+        height: 300px;
+    }
+
+    .contact {
+        padding: 50px 20px;
+    }
+
+    .contact-desc,
+    .contact-sub {
+        font-size: var(--responsive-desc-size);
+    }
+
+    .filter > li > a {
+        font-size: var(--responsive-desc-size);
+    }
+
+    .about-team-slide,
+    .about-team,
+    .about{
+        padding: 50px 20px;
+    }
+    .team-members{
+        padding-top: 50px;
+        padding-right: 20px;
+        padding-left:20px ;
+    }
+
+
+    .about-team-slide,
+    .about-slide {
+        display: block !important;
+    }
+
+    .about-team,
+    .about-grid {
+        display: none;
     }
 }
